@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+*{
+    font-family: Ubuntu;
+}
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    mix-blend-mode: screen;
+    transition: 300ms;
+    z-index: 2;
+}
+.invert{
+    mix-blend-mode: multiply;
+    filter: invert(100%);
+}
+.logo{
+    position: absolute;
+    z-index: 6;
+    font-size: 10vw;
+    margin: 15px;
+    user-select: none;
+    cursor: pointer;
+}
+.colorWhite{
+    color: #fff;
+}
+.title{
+    position: absolute;
+    font-size: 14vw;
+    text-shadow: 0 20px 30px rgba(0,0,0,1);
+    font-weight: bold;
+    z-index: 4;
+    user-select: none;
+}
+.copy{
+    position: absolute;
+    z-index: 6;
+    left: 10px;
+    bottom: 10px;
+    font-size: 5vw;
+}
+.tema{
+    position: absolute;
+    z-index: 6;
+    width: 30px;
+    height: 30px;
+    right: 65px;
+    top: 25px;
+    cursor: pointer;
+}
+.redes{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 4;
+    bottom: 90px;
+    right: 20px;
+    z-index: 6;
+}
+.redes svg{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+#menu{
+    position: absolute;
+    z-index: 6;
+    width: 30px;
+    height: 30px;
+    right: 25px;
+    top: 25px;
+}
+#menuItens{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    z-index: 5;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    transition: 300ms;
+    opacity: 0.8;
+}
+#menuClose{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transition: 300ms;
+    cursor: pointer;
+}
+#menuClose:hover{
+    transform: rotate(90deg);
+}
+#menuItens li{
+    list-style-type:none;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.menuItensHover{
+    background: orangered;
+    color: #000;
+}
+svg{
+    cursor: pointer;
+    transition: 300ms;
+}
+@media (min-width: 700px) {
+    .logo{
+        font-size: 5vw;
+    }
+    .copy{
+        font-size: 2vw;
+    }
+}
